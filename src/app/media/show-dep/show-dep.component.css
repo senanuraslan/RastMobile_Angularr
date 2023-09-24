@@ -1,0 +1,142 @@
+/****** Yeni Hesap Ekle Butonu *********/
+.custom-button {
+    width: 175px;
+    height: 42px;
+    border-radius: 39px;
+    background: #744BFC;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: none; /* Kenar çerçevesini kaldırır */
+    justify-content: center;
+    padding-left: 10px; /* İsteğe bağlı: "+" simgesinden buton metnine biraz boşluk bırakır */
+}
+
+/* + simgesi */
+.button-icon {
+    margin-right: 5px; /* "+" simgesi ile metin arasında boşluk bırakır */
+    font-size: 20px;
+}
+
+/********* Search Butonu *********/
+.search-button {
+    width: 380px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 39px; 
+}
+
+/* Search metni */
+.search-text {
+    color: #8C8C8C;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Arama butonu için stil */
+.search-action-button {
+    background: #744BFC;
+    width: 45px;
+    height: 42px;
+    border: none;
+    border-radius: 0 39px 39px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    cursor: pointer;
+}
+/* Arka plan SVG simgesi için stil */
+.background-icon {
+    width: 45px;
+    height: 42px;
+}
+/* Arama SVG simgesi için stil */
+.search-icon {
+    width: 135.6px;
+    height: 16px;
+}
+
+
+/************* Data grid konteynırı **************/
+#gridContainer {
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+}
+
+.dx-datagrid {
+    background-color: #4f23df;
+    line-height: inherit;
+ }
+
+/*************** Rows **********/
+.show-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+  }
+  
+  .show-button span{
+    color: #744BFC;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+   
+
+  .row-button{
+      /* width: 9.972px; */
+    /* height: 7px; */
+    /* border: none; */
+    /* position: absolute; */
+    width: 90px;
+    height: 37px;
+    border-radius: 39px;
+    border: 1px solid #CFC0FF;
+    background: #FFF;
+    /* margin-right: 10px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+
+  .page-button-down{
+    width: 9.972px;
+    height: 7px;
+    background: #FFF;
+    border: none;
+    position: unset; 
+    
+  }
+
+  .page-button-up{
+    width: 9.972px;
+    height: 0px;
+    border: none;
+    position: unset;
+    background: #FFF;  
+  }
+
+
+  
+  
+  
+  
+
+
+  

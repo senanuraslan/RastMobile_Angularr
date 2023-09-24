@@ -1,0 +1,100 @@
+<!--BOOTSTRAP MODAL COMPONENTİNE kısmını copyaladım
+    Live demo Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.-->
+
+
+  <table class="table table-striped">
+    <br>  
+         <!-- Modal bu alan yeni kayıt oluşturma sayfası için yapıldı -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-s" role="document" id="form">
+            <div class="modal-content">
+              <div class="modal-body">
+                <app-add-edit-dep [dep]= "dep" *ngIf= "ActivateAddEditDepComp">
+                </app-add-edit-dep>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Yeni Hesap Ekle Button -->
+    <button type="button" class="btn btn-primary float-right custom-button" data-toggle="modal" data-target="#exampleModal" (click)="addClick()" 
+    data-backdrop="static" data-keyboard="false">
+    <span class="button-icon">+</span> Yeni Hesap Ekle
+    </button>
+     <!-- Search Arama Butonu -->
+     <div class="search-button">
+       <span class="search-text">Search objects...</span>
+       <button class="search-action-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="42" viewBox="0 0 45 42" fill="none" class="background-icon">
+          <path d="M0 0H26C36.4934 0 45 8.50659 45 19V23C45 33.4934 36.4934 42 26 42H0V0Z" fill="#744BFC"/>
+        </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="search-icon">
+          <path d="M8.6 16.2C12.7974 16.2 16.2 12.7974 16.2 8.6C16.2 4.40263 12.7974 1 8.6 1C4.40263 1 1 4.40263 1 8.6C1 12.7974 4.40263 16.2 8.6 16.2Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.6 17L15 15.4" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+       </button>
+     </div>
+     <br>  
+    <dx-data-grid
+    id="gridContainer"
+    dataSource="https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/data/customers.json"
+    [columns]="['CompanyName', 'City', 'State']"
+    [showBorders]="true"
+    >
+    </dx-data-grid>
+
+    <div class="show-button">
+      <span>Show:</span>
+      <div class="row-button"> 
+        <button class="page-button-up" (click)="refreshDepList()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+            <path d="M5.18964 0.285873L9.07162 5.73587C9.44885 6.26547 9.07023 6.99999 8.42002 6.99999L1.55201 6.99999C0.901792 6.99999 0.523177 6.26547 0.900407 5.73587L4.78239 0.285873C4.88207 0.145935 5.08996 0.145935 5.18964 0.285873Z" fill="#744BFC"/>
+          </svg>
+        </button>
+        <button class="page-button-down" (click)="refreshDepList()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+            <path d="M5.18964 6.71413L9.07162 1.26413C9.44885 0.734529 9.07023 -3.953e-08 8.42002 -6.80313e-08L1.55201 -3.69083e-07C0.901792 -3.97584e-07 0.523177 0.73453 0.900407 1.26413L4.78239 6.71413C4.88207 6.85407 5.08996 6.85407 5.18964 6.71413Z" fill="#744BFC"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!--  <thead>
+        <tr>
+            <th>Sosyal Model Linki</th>
+            <th>Sosyal Model Adı</th>
+            <th>Açıklama</th>
+        </tr>       
+    </thead>
+   <tbody>
+        <tr *ngFor="let dataItem of DepartmanList">
+            <td>{{dataItem.Modellink}}</td>
+            <td>{{dataItem.ModelAd}}</td>
+            <td>{{dataItem.Modell}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1"
+                data-toggle="modal" data-target="#exampleModal"
+                (click)="editClick(dataItem)"
+                data-backdrop="static" data-keyboard="false">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                    </button>
+                    <button type="button" class="btn btn-light mr-1"
+                    (click)="deleteClick(dataItem)"
+                    >
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                    </button>
+            </td> 
+        </tr>
+    </tbody>  
+
+    -->
+</table>
+
+
+      

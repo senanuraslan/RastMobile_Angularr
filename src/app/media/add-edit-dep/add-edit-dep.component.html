@@ -1,0 +1,58 @@
+
+<div class="form-group">
+
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+    (click)="closeClick()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Sosyal Media Linki</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <input type="text" class="form-control custom-input" [(ngModel)]="MediaLink">
+            <br>    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Sosyal Media Adı</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <input type="text" class="form-control custom-input" [(ngModel)]="MediaAd">
+            <br>    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Açıklama</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <input type="text" class="form-control custom-input" [(ngModel)]="Modell">
+            <br>    
+        </div>
+    </div>
+
+
+    <div class="button-container">
+        <button (click)="closeClick()" *ngIf="dep.MediaId==0" class="btn btn-primary custom-button cancel-button">
+            Vazgeç
+        </button>
+    
+        <button (click)="addMedia()" *ngIf="dep.MediaId==0" class="btn btn-primary custom-button save-button">
+            Kaydet
+        </button>
+    </div>
+    
+</div>
+

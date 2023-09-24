@@ -1,0 +1,49 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/23.1.5/css/dx.light.css" />
+
+</head>
+<body class="dx-viewport">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <img src="assets/Rast.svg" alt="YouTube Logo">   
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hakkımızd</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jüri - Yarışma Yazılımı</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Word Ninja</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Word Pyramids</a>
+            </li>
+          </ul>  
+          <ul>   
+            <img src="assets/youtube.svg" alt="YouTube Logo">
+            <img src="assets/istegram.svg" alt="istegram Logo">
+            <img src="assets/vector.svg" alt="vector Logo">
+            <img src="assets/Linkedin.svg" alt="Linkedin logo">
+          </ul>    
+        </div>
+      </nav>
+      <br>  
+      <main role="main" class="container">
+        <app-show-dep></app-show-dep> <!--show-dep.componenet alanını getiriyor-->
+        <router-outlet></router-outlet> 
+      </main>
+
+      
+</body>
+</html>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!--
+    RouterModule ile tanımladığınız yolları (paths) kullanarak sayfalar arası geçiş yaparsınız. 
+    Örneğin, home sayfası için path /home ve about sayfası için path /about olabilir.
+-->

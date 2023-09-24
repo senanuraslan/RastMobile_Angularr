@@ -1,0 +1,59 @@
+
+.navbar.navbar-light.bg-light {
+    background-color: white !important;
+  }
+
+  /*Başlıklarımı hizalamak için*/
+  .navbar-nav { 
+    display: flex;
+    justify-content: flex-end; /* Sağa yaslansın */
+    margin-left: auto; /* Sağa kaydırma için */
+    display: flex;
+    justify-content: center; /* Başlıkları yatayda ortala */
+    align-items: center; /* Başlıkları dikeyde ortala */
+    height: 100%; /* Başlıkların dikeyde merkezlenmesini sağlar */
+  }
+   
+/* Rast.svg'nin stilini ayarlayın */
+img[src="assets/Rast.svg"] {
+    width: 124.271px;
+    height: 36.699px;
+  }
+  
+  /* Diğer img elementlerinin stilini ayarlayın */
+  .nav .navbar-collapse .navbar-nav {
+    display: flex;
+    align-items: center; /* Diğer img elementlerini dikey ortala */
+  }
+  
+  .nav .navbar-collapse .navbar-nav img {
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+
+  }
+  
+  /* Sadece belirli img elementlerine stil eklemek için, img[src="..."] kullanabilirsiniz */
+  img[src="assets/youtube.svg"],
+  img[src="assets/istegram.svg"],
+  img[src="assets/vector.svg"],
+  img[src="assets/linkedin.svg"]  {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; 
+  }
+  
+  body {
+    padding-left: 130px; 
+    padding-right: 100px; 
+    margin-top: 33px;
+  }
+
+  .container{
+    width: 1581px;
+    height: 620px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0.00) 135.85%);
+  }
+
+  

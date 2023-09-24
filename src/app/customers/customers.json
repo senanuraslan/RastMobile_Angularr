@@ -1,0 +1,66 @@
+[{
+    "ID": 1,
+    "CompanyName": "Premier Buy",
+    "Address": "7601 Penn Avenue South",
+    "City": "Richfield"
+   
+}, {
+    "ID": 2,
+    "CompanyName": "ElectrixMax",
+    "Address": "263 Shuman Blvd",
+    "City": "Naperville"
+   
+}, {
+    "ID": 3,
+    "CompanyName": "Video Emporium",
+    "Address": "1201 Elm Street",
+    "City": "Dallas"
+}, {
+    "ID": 4,
+    "CompanyName": "Screen Shop",
+    "Address": "1000 Lowes Blvd",
+    "City": "Mooresville"
+}, {
+    "ID": 5,
+    "CompanyName": "Braeburn",
+    "Address": "1 Infinite Loop",
+    "City": "Cupertino",
+    "State": "California"
+}, {
+    "ID": 6,
+    "CompanyName": "PriceCo",
+    "Address": "30 Hunter Lane",
+    "City": "Camp Hill"
+}, {
+    "ID": 7,
+    "CompanyName": "Ultimate Gadget",
+    "Address": "1557 Watson Blvd",
+    "City": "Warner Robbins"
+}, {
+    "ID": 8,
+    "CompanyName": "EZ Stop",
+    "Address": "618 Michillinda Ave.",
+    "City": "Arcadia"
+}, {
+    "ID": 9,
+    "CompanyName": "Clicker",
+    "Address": "1100 W. Artesia Blvd.",
+    "City": "Compton",
+    "State": "California"
+}, {
+    "ID": 10,
+    "CompanyName": "Store of America",
+    "Address": "2401 Utah Ave. South",
+    "City": "Seattle",
+    "State": "Washington"
+}, {
+    "ID": 11,
+    "CompanyName": "Zone Toys",
+    "Address": "1945 S Cienega Boulevard",
+    "City": "Los Angeles"
+}, {
+    "ID": 12,
+    "CompanyName": "ACME",
+    "Address": "2525 E El Segundo Blvd",
+    "City": "El Segundo"
+}]
